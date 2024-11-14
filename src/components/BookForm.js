@@ -51,8 +51,10 @@ function BookForm({ addBook }) {
         onChange={(e) => setYear(e.target.value)}
       />
       <button type="submit">Add Book</button>
+      <form onSubmit={handleSubmit} className="form">
     </form>
   );
 }
 
 export default BookForm;
+s
