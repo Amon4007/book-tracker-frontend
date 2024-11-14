@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import BookList from './components/BookList';
+import BookForm from './components/BookForm';
+import BookDetails from './components/BookDetails';
+import axios from 'axios';
 
 function App() {
+  const [books, setBooks] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:4000/books')
+      .then(response => setBooks(response.data))
+      .catch(error => console.error('Error fetching books:', error));
+  }, []);
+
+  const addBook = (newBook) => {
+    setBooks([...books, newBook]);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<BookList books={books} />} />
+        <Route path="/add" element={<BookForm addBook={addBook} />} />
+        <Route path="/books/:id" element={<BookDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
