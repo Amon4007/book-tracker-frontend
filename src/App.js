@@ -6,6 +6,7 @@ import BookList from './components/BookList';
 import BookForm from './components/BookForm';
 import BookDetails from './components/BookDetails';
 import axios from 'axios';
+import './styles/App.css';
 
 function App() {
   const [books, setBooks] = useState([]);
