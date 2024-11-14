@@ -1,0 +1,25 @@
+/* BookList.css */
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .book-card {
+    background-color: #f4f4f9; /* Light background for contrast */
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .book-card h2 {
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+  }
+
+  .book-card p {
+    color: #555;
+    font-size: 0.9rem;
+  }
