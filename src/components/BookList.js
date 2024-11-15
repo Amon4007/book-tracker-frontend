@@ -1,16 +1,18 @@
-// src/components/BookList.js
 import React from 'react';
-import { Link } from 'react-router-dom';
+import BookItem from './BookItem';
 
-function BookList({ books }) {
+function BookList({ books, onDeleteBook, onUpdateStatus }) {
   return (
     <div>
-      <h2>Book List</h2>
+      <h2>Your Book List</h2>
       <ul>
-        {books.map(book => (
-          <li key={book.id}>
-            <Link to={`/books/${book.id}`}>{book.title}</Link>
-          </li>
+        {books.map((book, index) => (
+          <BookItem
+            key={index}
+            book={book}
+            onDelete={() => onDeleteBook(index)}
+            onUpdateStatus={(newStatus) => onUpdateStatus(index, newStatus)}
+          />
         ))}
       </ul>
     </div>
