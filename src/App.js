@@ -1,34 +1,35 @@
-// src/App.js
-import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar';
-import BookList from './components/BookList';
-import BookForm from './components/BookForm';
-import BookDetails from './components/BookDetails';
-import axios from 'axios';
+import React, { useState } from 'react';
+import BookForm from './BookForm';
+import BookList from './BookList';
 
 function App() {
   const [books, setBooks] = useState([]);
 
-  useEffect(() => {
-    axios.get('http://localhost:4000/books')
-      .then(response => setBooks(response.data))
-      .catch(error => console.error('Error fetching books:', error));
-  }, []);
+  const addBook = (book) => {
+    setBooks([...books, book]);
+  };
 
-  const addBook = (newBook) => {
-    setBooks([...books, newBook]);
+  const deleteBook = (index) => {
+    const updatedBooks = books.filter((_, i) => i !== index);
+    setBooks(updatedBooks);
+  };
+
+  const updateBookStatus = (index, newStatus) => {
+    const updatedBooks = [...books];
+    updatedBooks[index].status = newStatus;
+    setBooks(updatedBooks);
   };
 
   return (
-    <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<BookList books={books} />} />
-        <Route path="/add" element={<BookForm addBook={addBook} />} />
-        <Route path="/books/:id" element={<BookDetails />} />
-      </Routes>
-    </Router>
+    <div>
+      <h1>Book Tracker</h1>
+      <BookForm onAddBook={addBook} />
+      <BookList
+        books={books}
+        onDeleteBook={deleteBook}
+        onUpdateStatus={updateBookStatus}
+      />
+    </div>
   );
 }
 
