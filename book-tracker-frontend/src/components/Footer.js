@@ -1,9 +1,10 @@
+// src/components/Footer.js
 import React from 'react';
 
 const Footer = () => {
   return (
     <footer>
-      <p>Book Tracker &copy; 2024</p>
+      <p>© 2024 Book Tracker</p>
     </footer>
   );
 };
