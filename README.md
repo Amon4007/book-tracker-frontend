@@ -5,6 +5,8 @@ By Amon
 Description
 Book Tracker is a simple, user-friendly application built with React.js. It allows users to manage their reading list by adding books, tracking their reading status, and removing unwanted entries. This project demonstrates essential React concepts, including components, state management, and routing using React Router.
 
+Screenshot
+[Include a relevant screenshot here]
 
 Features
 Home page displaying a list of books.
@@ -13,10 +15,6 @@ Toggle reading status between "Read" and "Currently Reading."
 Delete books from the list.
 Simple, clean, and responsive user interface.
 How to Use
-Requirements
-A computer, tablet, or phone.
-Internet access.
-A modern web browser.
 View Live Site
 Visit the deployed application at: Book Tracker (replace with live site URL once deployed)
 
@@ -36,7 +34,7 @@ Installation Process
 Clone this repository:
 bash
 Copy code
-git clone <https://github.com/Amon4007/book-tracker-frontend.git>  
+git clone <repository-url>  
 Navigate to the project directory:
 bash
 Copy code
@@ -65,7 +63,7 @@ Deployed API: Live API URL (replace with live API URL)
 Support and Contact Details
 For any questions, suggestions, or assistance, please contact:
 
-Email: amonlimo4@gmail.com
+Email: amon@example.com (replace with your email)
 License
 MIT License
 
