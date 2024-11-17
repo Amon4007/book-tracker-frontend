@@ -1,29 +1,13 @@
-// src/components/BookList.js
-import React from 'react';
+import BookCard from "./BookCard";
 
-const BookList = ({ books, deleteBook, toggleStatus }) => {
+function BookList({ books, onDelete }) {
   return (
-    <div>
-      <h2>Your Book List</h2>
-      {books.length === 0 ? (
-        <p>No books in your list. Start by adding some!</p>
-      ) : (
-        <ul>
-          {books.map((book) => (
-            <li key={book.id}>
-              <h3>{book.title}</h3>
-              <p>{book.author}</p>
-              <p>Status: {book.status}</p>
-              <button onClick={() => deleteBook(book.id)}>Delete</button>
-              <button onClick={() => toggleStatus(book.id)}>
-                Toggle Status
-              </button>
-            </li>
-          ))}
-        </ul>
-      )}
+    <div className="book-list">
+      {books.map((book) => (
+        <BookCard key={book.id} book={book} onDelete={onDelete} />
+      ))}
     </div>
   );
-};
+}
 
 export default BookList;
