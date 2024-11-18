@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# Book Tracker App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+####A React application to help book enthusiasts track their reading journey
+#### By **Amon Chirchir**
 
-## Available Scripts
+## Description
+Book Tracker is a simple, user-friendly application built with React.js. It allows users to manage their reading list by adding books, tracking their reading status, and removing unwanted entries. This project demonstrates essential React concepts, including components, state management, and routing using React Router.
 
-In the project directory, you can run:
+## Screenshot
 
-### `npm start`
+![<img width="522" alt="image" src="https://github.com/user-attachments/assets/3b18a05a-1139-4bec-bdc9-8714698aec5f">
+)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+•	Home page displaying a list of books.
+•	Ability to add new books to the list.
+•	Toggle reading status between "Read" and "Currently Reading."
+•	Delete books from the list.
+•	Simple, clean, and responsive user interface.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Use
 
-### `npm run build`
+### Requirements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A computer, tablet, or phone
+- Access to the internet
+- A modern web browser
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### View Live Site
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Visit the deployed application at: [https://673bba8110349a00088f54a0--book-tracker-frontend.netlify.app/])
 
-### `npm run eject`
+The live site allows you to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+•	Browse and manage your reading list.
+•	Add new books with a title.
+•	Update reading progress (mark as "Read" or "Currently Reading").
+•	Remove books you no longer want to track.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Local Development
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+If you want to run the project locally, you'll need:
 
-## Learn More
+- Node.js installed on your computer
+- Basic understanding of React JS
+- Code editor (VS Code recommended)
+- Terminal/Command Line
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Installation Process
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone this repository using:
 
-### Code Splitting
+   ```bash
+   git clone https://github.com/Amon4007/book-tracker-frontend.git
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   or by downloading a ZIP file of the code.
 
-### Analyzing the Bundle Size
+2. Navigate to the project directory:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   cd book-tracker-frontend  
+   ```
 
-### Making a Progressive Web App
+3. Install the required dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   npm install
+   ```
 
-### Advanced Configuration
+4. Run the development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm run dev
+   ```
 
-### Deployment
+5. Open your browser and visit `http://localhost:3001`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Technologies Used
 
-### `npm run build` fails to minify
+React.js (frontend)
+JSON Server (backend)
+CSS3
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+## Related Repositories
+
+### Backend API
+
+- Repository: [https://github.com/Amon4007/book-tracker-backend.git])
+- Deployed API: [Live API URL](https://book-tracker-backend-gvqw.onrender.com)
+
+## Support and Contact Details
+
+If you have any questions, suggestions, or need assistance, please contact:
+
+- Email: <amonlimo4@gmail.com>
+
+## License
+
+MIT License
+
+Copyright &copy; 2024 Amon Chirchir
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
