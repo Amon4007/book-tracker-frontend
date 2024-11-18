@@ -1,6 +1,6 @@
 # Book Tracker App
 
-####A React application to help book enthusiasts track their reading journey
+A React application to help book enthusiasts track their reading journey
 #### By **Amon Chirchir**
 
 ## Description
